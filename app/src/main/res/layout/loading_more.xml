@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bottom_load_more_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/footer_bg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_loading_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上拉加载更多"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_load_error"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="加载失败"
+        android:textColor="@color/list_divider_color"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</FrameLayout>

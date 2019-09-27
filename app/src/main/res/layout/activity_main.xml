@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:padding="15dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rb_title_frame"
+            android:padding="1dp"
+            android:orientation="horizontal"/>
+    </FrameLayout>
+
+    <View
+        style="@style/h_line"
+        android:layout_marginTop="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#9af6f7f9"
+        android:orientation="horizontal">
+
+        <!-- 左侧标题的父容器 -->
+        <TextView
+            android:id="@+id/table_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="报告期"
+            android:textColor="@color/color_949799"
+            android:textSize="14sp" />
+
+        <View android:id="@+id/table_title_line"
+            style="@style/v_line"/>
+
+        <!-- 右侧标题的父容器可实现水平滚动 -->
+        <com.zoe.financetable.widget.LinkedHorizontalScrollView
+            android:id="@+id/title_horsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View style="@style/h_line"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="list_divider_color">#FFEDEFF3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_ff4987f1">#ff4987f1</color>
+    <color name="color_949799">#949799</color>
+    <color name="color_323538">#323538</color>
+    <color name="color_9af6f7f9">#9af6f7f9</color>
+    <color name="footer_bg">#EDEFF3</color>
+</resources>
